@@ -4,9 +4,20 @@
   {{ partial "docs/html-head" . }}
   {{ partial "docs/inject/head" . }}
 </head>
+
 <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+
+  <header>
+    <div class="header-content">
+        <h1>GOS Research Group</h1>
+        <p>Operations Research and Deep Learning</p>
+    </div>
+</header>
+
+
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
+  
   <main class="container flex">
     <aside class="book-menu">
       <div class="book-menu-content">
@@ -45,6 +56,7 @@
   {{ partial "docs/inject/body" . }}
 </body>
 </html>
+
 
 {{ define "menu" }}
   {{ partial "docs/menu" . }}
