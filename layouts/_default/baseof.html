@@ -3,16 +3,22 @@
 <head>
   {{ partial "docs/html-head" . }}
   {{ partial "docs/inject/head" . }}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 </head>
 
 <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
 
-  <header>
-    <div class="header-content">
-        <h1>GOS Research Group</h1>
-        <p>Operations Research and Deep Learning</p>
+  <header class="top-bar">
+    <div class="top-bar-content">
+        <a class="logo" href="#">Your Logo</a>
+        <nav class="top-bar-nav">
+          <ul>
+            <li><a href="https://github.com/gos-ufsc" target="_blank"><i class="fab fa-github"></i></a></li></ul>
+      </nav>      
     </div>
 </header>
+
 
 
   <input type="checkbox" class="hidden toggle" id="menu-control" />

@@ -7,33 +7,47 @@ code.has-jax {
   font-size: 100%;
 }
 
-header {
-  background-image: url('header.png');
-  background-position: center; 
-  padding: 50px;
-  text-align: center;
+.top-bar {
+  background-color: #424447; /* Set the background color */
+  color: #fff; /* Set the text color */
+  padding: 10px 0; /* Add padding to the top bar */
 }
-.header-content h1 {
-  margin: 0;
-  color: #ffffff;
-  font-size: 48px; /* Adjust the size as needed */
-  font-weight: bold;
-    /* Faux text border */
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px 1px 0 #000,
-         3px 3px 0 #000;
-        }
-.header-content p {
-  margin: 0;
-  color: #ffffff;
-  text-shadow: 
-  -1px -1px 0 #000,  
-   1px -1px 0 #000,
-  -1px 1px 0 #000,
-   1px 1px 0 #000;
+
+.top-bar-content {
+  display: flex; /* Use flexbox to arrange content */
+  justify-content: space-between; /* Space content evenly */
+  align-items: center; /* Center align content vertically */
+  max-width: 1200px; /* Set the maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
 }
+
+.logo {
+  text-decoration: none; /* Remove underline from the logo */
+  color: #fff; /* Set logo text color */
+  font-weight: bold; /* Make the text bold */
+  font-size: 24px; /* Adjust the font size as needed */
+}
+
+.top-bar-nav ul {
+  list-style: none; /* Remove the default list styles */
+  padding: 0; /* Remove padding from the list */
+  display: flex; /* Use flexbox for navigation items */
+}
+
+.top-bar-nav li {
+  margin: 0 15px; /* Add margin between navigation items */
+}
+
+.top-bar-nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* Set link text color */
+  font-weight: bold; /* Make the text bold */
+}
+
+.top-bar-nav a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 
 
 $padding-1: 1px !default;
