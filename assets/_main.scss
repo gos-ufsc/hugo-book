@@ -88,11 +88,11 @@ ul.pagination {
 .book-brand {
   margin-top: 0;
   margin-bottom: $padding-16;
-
+  display: flex;
+  justify-content: center;
   img {
-    height: 1.5em;
-    width: 1.5em;
-    margin-inline-end: $padding-8;
+    height: 4em;
+    width: 4em;
   }
 }
 
@@ -103,7 +103,6 @@ ul.pagination {
   .book-menu-content {
     width: $menu-width;
     padding: $padding-16;
-    background: var(--body-background);
 
     @include fixed;
   }
